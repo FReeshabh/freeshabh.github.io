@@ -14,6 +14,83 @@
     "text": "Introduction\nI graduated from Texas Tech University in May 2022 with a Bachelor’s in Computer Science and moved to Austin, TX! 🤠.\nWhile in school I closely worked with Codepath as a Tech Fellow to provide high quality iOS development curriculum to the students at Texas Tech. I’m interested in applications of deep learning to practical problems. I like to dabble on the more tradTech as well, which I might talk about in another place when I feel like it.\nI’m a Software Engineer at Oracle (Oracle Cloud Infrastructure - OCI) working on the Speech AI capabilities of the Oracle Cloud.\nThis introduction isn’t all comprehensive or my resume, which you can ask me for if interested. Email me at tewaririshabh1@gmail.com\n\nThings I’ve been up to that aren’t work\n\n\ntpot (ifykyk) \nBoxing / Muay Thai \nCooking (I’m a good cook, believe me) & Eating\nirl Standup comedy (mostly watching these days)\nThinking"
   },
   {
+    "objectID": "archives/panda-3d-notes/index.html",
+    "href": "archives/panda-3d-notes/index.html",
+    "title": "Notes on Panda3D",
+    "section": "",
+    "text": "Some blog issues are more for me rather than the general public, and it’s unlikely that I am going to make these posts public, however in order to preserve my own sanity for the future, And hopefully someone else (Hello if you found this! Go eat a cookie). I have decided to write some general notes on the usage of Panda3D here.\n\n\n\nReason I am writing this, is I don’t believe the instructions available on GitHub are ample for people to get started with their own development built of Panda3D. Of course you can keep pinging rdb, Moguri, and CFSWorks to high hell, like I did last year, trying to get this started.\nI am currently on Arch Linux, I used to be on MacOS, which I remember made things sligtly trickier for a while. If I remember what my thoughts were on that, I will eventually put them here (Hint: Thirdparty stuff). In the meantime.\n\nStep 1: Clone the repository:\nThis step has been left as an excercise to the reader\nStep 2: Build stuff Make sure you have the dependencies ready to go. I usually don’t go with a wheel or an installer route python makepanda/makepanda.py --everything --no-egl --no-gles --no-gles2 --no-opencv --threads=4\nMake sure your computer is powerful enough to have 4 threads, a good rule is to 2 x number_of_cores to get how many threads you need. You can always go with no threads, keeps your PC cooler, but takes longer to compile everything.\nSet enviroment variables This is the reason why I don’t care about having an installer or a wheel. Just let your computer know where to find the built stuff\nexport PATH=*path/to*/panda3d/built/bin:$PATH  export PYTHONPATH=*path/to*/panda3d/built:$PYTHONPATH  export LD_LIBRARY_PATH=*path/to*/panda3d/built/lib:$LD_LIBRARY_PATH (Make sure there are no spaces in setting the enviroment variable (sh rule!)\n\nAloha, Ciao, Alvida, whatever you speak\nbye"
+  },
+  {
+    "objectID": "archives/panda-3d-notes/index.html#how-to-install-the-developer-build-of-panda3d",
+    "href": "archives/panda-3d-notes/index.html#how-to-install-the-developer-build-of-panda3d",
+    "title": "Notes on Panda3D",
+    "section": "",
+    "text": "Reason I am writing this, is I don’t believe the instructions available on GitHub are ample for people to get started with their own development built of Panda3D. Of course you can keep pinging rdb, Moguri, and CFSWorks to high hell, like I did last year, trying to get this started.\nI am currently on Arch Linux, I used to be on MacOS, which I remember made things sligtly trickier for a while. If I remember what my thoughts were on that, I will eventually put them here (Hint: Thirdparty stuff). In the meantime.\n\nStep 1: Clone the repository:\nThis step has been left as an excercise to the reader\nStep 2: Build stuff Make sure you have the dependencies ready to go. I usually don’t go with a wheel or an installer route python makepanda/makepanda.py --everything --no-egl --no-gles --no-gles2 --no-opencv --threads=4\nMake sure your computer is powerful enough to have 4 threads, a good rule is to 2 x number_of_cores to get how many threads you need. You can always go with no threads, keeps your PC cooler, but takes longer to compile everything.\nSet enviroment variables This is the reason why I don’t care about having an installer or a wheel. Just let your computer know where to find the built stuff\nexport PATH=*path/to*/panda3d/built/bin:$PATH  export PYTHONPATH=*path/to*/panda3d/built:$PYTHONPATH  export LD_LIBRARY_PATH=*path/to*/panda3d/built/lib:$LD_LIBRARY_PATH (Make sure there are no spaces in setting the enviroment variable (sh rule!)\n\nAloha, Ciao, Alvida, whatever you speak\nbye"
+  },
+  {
+    "objectID": "archives/illusion-and-reality/index.html",
+    "href": "archives/illusion-and-reality/index.html",
+    "title": "Illusion and Reality of Bloatware: A meme saga",
+    "section": "",
+    "text": "Aren’t computers great? You might get two different answers depending on whether you’re asking a classical user, or someone a bit more “hip”, which the classical trolls love to refer as Soyboys in the Tech sense. However, that’s not a term I am going to use but I still need to make a distinguish between the two types. So let’s come with up two new terms (which are named like this for no particular reason): CoVs (the classical ones), and the nCoVs (the new computer people). The n in this context refers to NodeJS\nExamples of CoVs are the kind of people who love C (or lisp), have a 10 year old laptop at the least, and have a strong love or hate for Microsoft. The nCoVs are the web age people, these are the people who love JavaScript, Node, Electron, and other “BLOATED” stuff.\n\n\n\nBefore we criticize bloatware, we need to first define bloatware. Bloatware is when a piece of software is often bogged down with unnecessary features or other software, which are strictly “additional” items, and are not part of the core functionality. Bloatware has been around for quite some time, but quite recently there has been a push within the software community (mostly the Free Software community) to move towards the other side of the software, which prides itself in ridding itself of useless features.\nThese are the developers that have convinced themselves that they are following the UNIX Philosophy, and it’s alright to get rid of the features that could be considered as additional, and yet remain one of the most heavily used. I’m obviously referring to the people behind Suckless Software, whose software I actually use on a day to day basis (simple terminal, dmenu, and dwm at the time of this writing). However I’m also slightly delusional and have (finally) deemed my time worthy of more than configging and patching up things, so I end up using someone else’s patched builds of this software.\nNow that I have given a little background on the two different types of software in competition, let’s get this straight: I (currently) hold a firm anti bloatware stance. This stance in the meantime, is effectively useless, I’ll still continue to use software, however for ideological reasons, I have to denounce the software, and would try to avoid my own software filled with useless things. That said however, I am not opposed to Thiccware (a term that I definitely didn’t make up).\n\n\n\nThiccware is software which might contain add-on features by default, but those features are used enough, that it validates their existence. Examples of Thiccware include the Brave Browser, a few CADs, VSCode etc. The main reason why anyone should be using any software is to make themselves more productive over all. Minimal Software is often more customizable, and might fit someone else’s workflow better. But it’s usage is only validated, when the user is able to productive with that software instead of spending all waking times configuring the damn thing.\nA lot of minimalists will be angry at me, and accuse me of using bloated software myself, which I might be (hint: Emacs). However next time, before you comment on that Reddit or YouTube thread. Give it some thought. Maybe the software is not bloat, it might just be thicc?\n~~ :)\nOr it could really be super bloated, bring a dd just in case.\nCiao"
+  },
+  {
+    "objectID": "archives/illusion-and-reality/index.html#the-current-state-of-software-and-the-community",
+    "href": "archives/illusion-and-reality/index.html#the-current-state-of-software-and-the-community",
+    "title": "Illusion and Reality of Bloatware: A meme saga",
+    "section": "",
+    "text": "Aren’t computers great? You might get two different answers depending on whether you’re asking a classical user, or someone a bit more “hip”, which the classical trolls love to refer as Soyboys in the Tech sense. However, that’s not a term I am going to use but I still need to make a distinguish between the two types. So let’s come with up two new terms (which are named like this for no particular reason): CoVs (the classical ones), and the nCoVs (the new computer people). The n in this context refers to NodeJS\nExamples of CoVs are the kind of people who love C (or lisp), have a 10 year old laptop at the least, and have a strong love or hate for Microsoft. The nCoVs are the web age people, these are the people who love JavaScript, Node, Electron, and other “BLOATED” stuff."
+  },
+  {
+    "objectID": "archives/illusion-and-reality/index.html#in-the-offense-of-bloat",
+    "href": "archives/illusion-and-reality/index.html#in-the-offense-of-bloat",
+    "title": "Illusion and Reality of Bloatware: A meme saga",
+    "section": "",
+    "text": "Before we criticize bloatware, we need to first define bloatware. Bloatware is when a piece of software is often bogged down with unnecessary features or other software, which are strictly “additional” items, and are not part of the core functionality. Bloatware has been around for quite some time, but quite recently there has been a push within the software community (mostly the Free Software community) to move towards the other side of the software, which prides itself in ridding itself of useless features.\nThese are the developers that have convinced themselves that they are following the UNIX Philosophy, and it’s alright to get rid of the features that could be considered as additional, and yet remain one of the most heavily used. I’m obviously referring to the people behind Suckless Software, whose software I actually use on a day to day basis (simple terminal, dmenu, and dwm at the time of this writing). However I’m also slightly delusional and have (finally) deemed my time worthy of more than configging and patching up things, so I end up using someone else’s patched builds of this software.\nNow that I have given a little background on the two different types of software in competition, let’s get this straight: I (currently) hold a firm anti bloatware stance. This stance in the meantime, is effectively useless, I’ll still continue to use software, however for ideological reasons, I have to denounce the software, and would try to avoid my own software filled with useless things. That said however, I am not opposed to Thiccware (a term that I definitely didn’t make up)."
+  },
+  {
+    "objectID": "archives/illusion-and-reality/index.html#with-2-cs",
+    "href": "archives/illusion-and-reality/index.html#with-2-cs",
+    "title": "Illusion and Reality of Bloatware: A meme saga",
+    "section": "",
+    "text": "Thiccware is software which might contain add-on features by default, but those features are used enough, that it validates their existence. Examples of Thiccware include the Brave Browser, a few CADs, VSCode etc. The main reason why anyone should be using any software is to make themselves more productive over all. Minimal Software is often more customizable, and might fit someone else’s workflow better. But it’s usage is only validated, when the user is able to productive with that software instead of spending all waking times configuring the damn thing.\nA lot of minimalists will be angry at me, and accuse me of using bloated software myself, which I might be (hint: Emacs). However next time, before you comment on that Reddit or YouTube thread. Give it some thought. Maybe the software is not bloat, it might just be thicc?\n~~ :)\nOr it could really be super bloated, bring a dd just in case.\nCiao"
+  },
+  {
+    "objectID": "archives/illusion-linux/index.html",
+    "href": "archives/illusion-linux/index.html",
+    "title": "Choice is an Illusion, and this time it’s Linux",
+    "section": "",
+    "text": "It’s always hard to pinpoint the audience this blog is being written for, but then I end up realizing it’s mostly just written for me. However if anyone else happens to come across this. Aces! You get a unicorn, just not from me. Aside from the weak attempt at humor/humour gained from watching too much British telly over this quarantine break, here’s some rambling. (Keep reading find the best OS, distro, GUI to work in the most efficient way!)\nTo follow through this incoherent jumble of thoughts I expect the following from you: 1. A little familiarity with Linux (if you correct me by saying GNU/Linux, or GNU+Linux, I am legally obligated to burn a GNU plushie, so let’s not harm little Gnu’s shall we?)\n\nAbility to search for things on the internet. (much more of a skill than people usually give it credit for)\nSome time spent that will not benefit in you gaining any tech knowledge\n\nI also recognize a lot of my thoughts will come to look inspired (or reflected) from and by Luke Smith. I do not share his political beliefs, however it would be unfair to say he wasn’t the reason I started using Linux full-time, and teaching me about it. That said today I will echo his words “Linux distributions are a social construct”, but go a little further down the rabbit hole and talk about why most things people usually take sides on (i.e. Window Managers, text editors, etc.) also are.\n\n\nSo here’s what usually ends up making a functional Linux box (for the end-user, not a server): 1. Hardware : hah, yes 2. The kernel: This is what “Linux” is, the kernel. It interacts the hardware and the software, pretty important don’t ya think? 3. The userspace: This is where YOU come in, and interact with the system.\nSo what makes separates a distribution from another? 1. The Graphical Stuff: This is what births most of these spinoff distributions: Kubuntu, Lubuntu, Mate, which are all Ubuntu, with a different default GUI from regular Ubuntu. I’d be ignorant to say that’s all they change, but I am not looking to make friends here, so why not throw in Elementary, Mint and others in too (I know they worked hard on Pantheon, now please let me live).\n\nThe Runit system: This I respect more. These people knew they wanted a change, and went doing this in the worst way possible. Of course more props to OG distros more than spinoff ones. OG is Void, Gentoo, GUIX(my apologies), and spinoffs are Artix, Devuan, etc. If you think I am gonna comment on SystemD (I know it’s not capitalized like that), you’re out of your mind.\nPACKAGE MANAGER: Biggest one: How to install packages? pacman (represent), portage, apt, xbps, etc. Congrats you made yourself unique! Now go and do the same thing which the others do. If you can’t, doctors recommend LFS.\nFSF Reasons: This website is hosted by GitHub (at the time of writing), so why are you here. Shoutouts to Parabola, Trisquel, PureOS, Hyperbola (no shoutouts to this one), etc.\nSomething Special: This is where something unique comes in, like Nix and guix, and you can’t figure out how to install pip packages. (For noobies: Nix is more usable, GUIX is for:___ )\n\n\n\n\nTo anger even more of this already segmented Linux community, something I might be a part of (verdict still out). Newbies end up forgetting they are using a COMPUTER to do actual work. I have been in this position, and well have accepted a single thing that (mostly) works out for me (hint using someone else’s dots).\nYou are not to gain anything more from making your system look prettier, and more and more efficient. Just get what you want (quickly), and get to your real work! The amount of man hours I have wasted on delaying my actual work, and then this random rambling should give you some clue. USE IT FOR ACTUAL WORK.\nRicing is for cars, 42 :)\n\n\n\nNot sure but something along the lines of, if everything you’re comparing with each other does the same thing anyways. Just shut up, pick one randomly, GET TO WORK. If you don’t like it, pick something else and GET TO WORK.\nCiao? Alvida? whatever you speak\nbye"
+  },
+  {
+    "objectID": "archives/illusion-linux/index.html#whats-inside-your-linux-box",
+    "href": "archives/illusion-linux/index.html#whats-inside-your-linux-box",
+    "title": "Choice is an Illusion, and this time it’s Linux",
+    "section": "",
+    "text": "So here’s what usually ends up making a functional Linux box (for the end-user, not a server): 1. Hardware : hah, yes 2. The kernel: This is what “Linux” is, the kernel. It interacts the hardware and the software, pretty important don’t ya think? 3. The userspace: This is where YOU come in, and interact with the system.\nSo what makes separates a distribution from another? 1. The Graphical Stuff: This is what births most of these spinoff distributions: Kubuntu, Lubuntu, Mate, which are all Ubuntu, with a different default GUI from regular Ubuntu. I’d be ignorant to say that’s all they change, but I am not looking to make friends here, so why not throw in Elementary, Mint and others in too (I know they worked hard on Pantheon, now please let me live).\n\nThe Runit system: This I respect more. These people knew they wanted a change, and went doing this in the worst way possible. Of course more props to OG distros more than spinoff ones. OG is Void, Gentoo, GUIX(my apologies), and spinoffs are Artix, Devuan, etc. If you think I am gonna comment on SystemD (I know it’s not capitalized like that), you’re out of your mind.\nPACKAGE MANAGER: Biggest one: How to install packages? pacman (represent), portage, apt, xbps, etc. Congrats you made yourself unique! Now go and do the same thing which the others do. If you can’t, doctors recommend LFS.\nFSF Reasons: This website is hosted by GitHub (at the time of writing), so why are you here. Shoutouts to Parabola, Trisquel, PureOS, Hyperbola (no shoutouts to this one), etc.\nSomething Special: This is where something unique comes in, like Nix and guix, and you can’t figure out how to install pip packages. (For noobies: Nix is more usable, GUIX is for:___ )"
+  },
+  {
+    "objectID": "archives/illusion-linux/index.html#to-hell-with-ricing",
+    "href": "archives/illusion-linux/index.html#to-hell-with-ricing",
+    "title": "Choice is an Illusion, and this time it’s Linux",
+    "section": "",
+    "text": "To anger even more of this already segmented Linux community, something I might be a part of (verdict still out). Newbies end up forgetting they are using a COMPUTER to do actual work. I have been in this position, and well have accepted a single thing that (mostly) works out for me (hint using someone else’s dots).\nYou are not to gain anything more from making your system look prettier, and more and more efficient. Just get what you want (quickly), and get to your real work! The amount of man hours I have wasted on delaying my actual work, and then this random rambling should give you some clue. USE IT FOR ACTUAL WORK.\nRicing is for cars, 42 :)"
+  },
+  {
+    "objectID": "archives/illusion-linux/index.html#my-point",
+    "href": "archives/illusion-linux/index.html#my-point",
+    "title": "Choice is an Illusion, and this time it’s Linux",
+    "section": "",
+    "text": "Not sure but something along the lines of, if everything you’re comparing with each other does the same thing anyways. Just shut up, pick one randomly, GET TO WORK. If you don’t like it, pick something else and GET TO WORK.\nCiao? Alvida? whatever you speak\nbye"
+  },
+  {
+    "objectID": "archives.html",
+    "href": "archives.html",
+    "title": "Archives",
+    "section": "",
+    "text": "Surreal and shitty metaverse\n\n\n\n\n\n\n\n\n\n\n\n\nOct 3, 2020\n\n\n\n\n\n\n  \n\n\n\n\nMy experience with standup comedy after 4-5 months\n\n\n\n\n\n\n\n\n\n\n\n\nOct 3, 2020\n\n\n\n\n\n\n  \n\n\n\n\nIllusion and Reality of Bloatware: A meme saga\n\n\n\n\n\nChange your bloat to thicc\n\n\n\n\n\n\nApr 5, 2019\n\n\n\n\n\n\n  \n\n\n\n\nGSOC Panda3D: Project Proposal: Soloud Audio\n\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2019\n\n\n\n\n\n\n  \n\n\n\n\nChoice is an Illusion, and this time it’s Linux\n\n\n\n\n\nChange your bloat to thicc\n\n\n\n\n\n\nMar 5, 2019\n\n\n\n\n\n\n  \n\n\n\n\nGSOC Panda3D: Project Proposal: Native Video Loading\n\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2019\n\n\n\n\n\n\n  \n\n\n\n\nNotes on Panda3D\n\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2019\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
     "title": "Post With Code",
@@ -21,11 +98,158 @@
     "text": "Test post"
   },
   {
-    "objectID": "archives.html",
-    "href": "archives.html",
-    "title": "Archives",
+    "objectID": "archives/gsoc-panda-2/index.html#problem-abstract",
+    "href": "archives/gsoc-panda-2/index.html#problem-abstract",
+    "title": "GSOC Panda3D: Project Proposal: Soloud Audio",
+    "section": "\nProblem Abstract\n",
+    "text": "Problem Abstract\n\n\nPanda3D currently provides various backends for audio functionality that include OpenAL and FMOD. Both of these backends provide excellent support for audio however, they FMOD limits the holder’s permission to distribute FMOD based on the development budget, and OpenAL has a proprietary license (Panda3D uses an LGPL version). These licensing terms don’t fit Panda3D’s licensing spirit, which being based on a Modified BSD license is very permissive.\n\n\nSoLoud is a free (as in speech AND beer) audio engine for games released under the very permissive ZLib/LibPNG license. Zlib/LibPNG and Modified BSD Licenses, are very similar licenses, allowing much wider usage of this audio engine in Panda3D games. Aside from licensing, SoLoud has a native C++ API making it perfect to integrate into Panda3D, while still providing support for other interfaces such C, Python Ruby, etc. SoLoud has also been integrated into RPGMaker and GameMaker, which gives it a certain credibility for its usage in games.\n\n\nSoLoud supports commonly used formats such as 8, 16, 32 bit wavs, floating point wavs, ogg, mp3. Although it’s mentioned that there might exist certain cases that SoLoud is not equipped to handle yet. SoLoud also has limited SSE Optimization, so there are still cases where using an alternative backend such as FMOD might be useful."
+  },
+  {
+    "objectID": "archives/gsoc-panda-2/index.html#project-goals",
+    "href": "archives/gsoc-panda-2/index.html#project-goals",
+    "title": "GSOC Panda3D: Project Proposal: Soloud Audio",
+    "section": "\nProject Goals\n",
+    "text": "Project Goals\n\n\n\nIntegrate SoLoud as an additional audio backend for Panda3D\n\n\nMaking sure it’s equivalent in functionality to the OpenAL’s integration into Panda3D\n\n\nWrite the required tests and documentation for the newly integrated SoLoud"
+  },
+  {
+    "objectID": "archives/gsoc-panda-2/index.html#stretch-goal",
+    "href": "archives/gsoc-panda-2/index.html#stretch-goal",
+    "title": "GSOC Panda3D: Project Proposal: Soloud Audio",
+    "section": "\nStretch Goal\n",
+    "text": "Stretch Goal\n\n\n\nMaking sure it’s equivalent in functionality to the FMOD’s integration into Panda3D (or as close as possible)"
+  },
+  {
+    "objectID": "archives/gsoc-panda-2/index.html#implementation-plan",
+    "href": "archives/gsoc-panda-2/index.html#implementation-plan",
+    "title": "GSOC Panda3D: Project Proposal: Soloud Audio",
+    "section": "\nImplementation Plan\n",
+    "text": "Implementation Plan\n\n\n\nStudy the literature and codebase on the subject and familiarize myself more with SoLoud and Panda3D, before the project officially starts.\n\n\nUse GENie/premake4 to create the build files and the static libraries and set it up for Panda3D\n\n\nImplement stubs for the classes required to implement SoLoud to make it return blank output.\n\n\nCraft a test audio file for the implementation.\n\n\nFill out the stubs, and test the implementation works as expected\n\n\nTest for edge cases, make sure the implementation can handle any errors, or edge cases\n\n\nWrite tests and documentation for the implementation"
+  },
+  {
+    "objectID": "archives/gsoc-panda-2/index.html#project-timeline",
+    "href": "archives/gsoc-panda-2/index.html#project-timeline",
+    "title": "GSOC Panda3D: Project Proposal: Soloud Audio",
+    "section": "\nProject Timeline\n",
+    "text": "Project Timeline\n\n\n\nPrior to June 1\n\n\nReading up documentation for SoLoud, and learn more about the audio engine, and its implementation in other gaming engines/frameworks.\n\n\nGain more familiarity with Panda3D’s codebase\n\n\nWrite more tests for the existing Panda3D codebase\n\n\nRelieve any GSoC independent time commitments\n\n\n\n\nJune 1 - June 9\n\n\nLook at existing implementation of audio backends, and get an idea on my own implementation\n\n\nBuild the required libraries for the project\n\n\nImplement the method stubs for SoLoud integration\n\n\n\n\nJune 10 - June 26\n\n\nFill out the method stubs.\n\n\nImplement a basic functioning implementation (such as being able to play test sounds)\n\n\n\n\nJune 27 - July 3\n\n\nDeal with any issues that might have arisen so far.\n\n\nTurn in the Phase 1 Evaluation\n\n\n\n\nJuly 3 - July 17\n\n\nTest for any edge cases, or errors.\n\n\nWork on error handling\n\n\n\n\nJuly 18 - July 25\n\n\nStart working on the more advanced functionality of SoLoud (such as):\n\n\n3D Positional Audio\n\n\nAdjust parameters (such as balance) as appropriate\n\n\nPlaying several streams at once\n\n\nQueued Sounds, etc.\n\n\n\n\n\n\nJuly 26 - July 31\n\n\nWrite documentation for the existing implementation.\n\n\nDeal with any unexpected issues\n\n\nTurn in the Phase 2 Evaluation\n\n\n\n\nAugust 1 - August 15\n\n\nWork on other functionality for SoLoud integration to achieve a full featured functionality and reach parity in functionality as to OpenAL.\n\n\n\n\nAugust 15 - August 30\n\n\nWork on the stretch goal.\n\n\nWork on other areas of Panda3D\n\n\nPrepare for the final submission of the project"
+  },
+  {
+    "objectID": "archives/gsoc-panda-2/index.html#existing-contributions-to-panda3d",
+    "href": "archives/gsoc-panda-2/index.html#existing-contributions-to-panda3d",
+    "title": "GSOC Panda3D: Project Proposal: Soloud Audio",
+    "section": "\nExisting Contributions to Panda3D\n",
+    "text": "Existing Contributions to Panda3D\n\n\n\n\nPR #663 [MERGED]: Added unit tests for audio and video functionality of Panda3D. Added tests for Added test for audio_length, audio_rate, audio seek, audio seek fast, audio channels and many more. More information about this PR can be found in PR #612\n\n\n\n\nPR #595 [MERGED]: Update Header File Names to fit Panda3D’s naming convention.\n\n\n\n\nPR #592 [MERGED]: Similar to PR #595\n\n\n\n\nPR #596 [MERGED]: Tested OpenAL’s functionality on MacOS, and whether it actually needed FMOD by testing audio using the Media Sampler Program\n\n\n\n\nPR #623: Expanding on the work done by @hitesh4 in PR #593 . Added a new test for testing setting modes for Clock Objects\n\n\n\n\nPR #624: To remove deprecated methods, once a depreciation policy is decided upon."
+  },
+  {
+    "objectID": "archives/gsoc-panda-2/index.html#benefits-to-the-community",
+    "href": "archives/gsoc-panda-2/index.html#benefits-to-the-community",
+    "title": "GSOC Panda3D: Project Proposal: Soloud Audio",
+    "section": "\nBenefits to the community\n",
+    "text": "Benefits to the community\n\n\nThis project adds an alternative audio backend for usage for Panda3D. This implemented audio backend would be a more permissive option than the current popular options of FMOD and OpenAL, since SoLoud uses a ZLib license. Aside from licensing, SoLoud has a relatively easy to use interface, and it has proven itself worthy for gaming, since other gaming engines/frameworks (such as RPGMaker, and GameMaker use it)."
+  },
+  {
+    "objectID": "archives/gsoc-panda-2/index.html#time-constraints",
+    "href": "archives/gsoc-panda-2/index.html#time-constraints",
+    "title": "GSOC Panda3D: Project Proposal: Soloud Audio",
+    "section": "\nTime Constraints\n",
+    "text": "Time Constraints\n\n\nI plan to spend up to 40 hours a week working on this project. I might have to travel a bit in the early, or late stages of the project, but due to COVID-19 pandemic, it’d be hard to tell the exact dates on when this might occur. Aside from that I have no other commitments planned that might occupy my time."
+  },
+  {
+    "objectID": "archives/gsoc-panda-2/index.html#about-me",
+    "href": "archives/gsoc-panda-2/index.html#about-me",
+    "title": "GSOC Panda3D: Project Proposal: Soloud Audio",
+    "section": "\nAbout me\n",
+    "text": "About me\n\n\nI’m a sophomore (junior by credit hours) studying Computer Science at Texas Tech University. I used to go by Dr.Euler on GitHub, but I go by FReeshabh now. I still go by Dr.Euler (or oiler) on Discord, and can be contacted there, or by email rishabhtewari1@gmail.com.\n\n\nI mostly run my systems on Arch Linux these days, although I have access to MacOS, and Windows machine if the need arises. I’d either be available in the CDT Timezone, or the IST timezone, but due to the pandemic, I’m unable to say which one currently."
+  },
+  {
+    "objectID": "archives/Surreal-and-shitty-vr-verse/index.html",
+    "href": "archives/Surreal-and-shitty-vr-verse/index.html",
+    "title": "Surreal and shitty metaverse",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Surreal and shitty metaverse built by me\n\n\nIf you want to try it out for yourself. Click here\nGameplay and code is available There will be NO updates to this"
+  },
+  {
+    "objectID": "archives/gsoc-panda3d/index.html#problem-description",
+    "href": "archives/gsoc-panda3d/index.html#problem-description",
+    "title": "GSOC Panda3D: Project Proposal: Native Video Loading",
+    "section": "\nProblem Description\n",
+    "text": "Problem Description\n\n\nPanda3D’s current video solution FFmpeg while reliable limits users to only one choice for their video needs. FFmpeg uses a restrictive LGPL license which limits the freedom of the users and contributors, and the large dependency makes it quite hard to maintain. The proposed solution to the problem is to implement an alternative native video loader for Panda3D to give the user the ability to switch their video loader.\n\n\nMy proposed solution is to implement WebM’s libvpx as an option into Panda3D to load files, implement threading support for libvpx as done for FFmpeg already, and provide tests and documentation for the implemented video loader."
+  },
+  {
+    "objectID": "archives/gsoc-panda3d/index.html#project-goals",
+    "href": "archives/gsoc-panda3d/index.html#project-goals",
+    "title": "GSOC Panda3D: Project Proposal: Native Video Loading",
+    "section": "\nProject Goals\n",
+    "text": "Project Goals\n\n\n\nImplement WebM video loader into the existing Panda3D codebase\n\n\nImplement threading support for WebM\n\n\nWrite up documentation, add new tests, and clean up the code"
+  },
+  {
+    "objectID": "archives/gsoc-panda3d/index.html#stretch-goals",
+    "href": "archives/gsoc-panda3d/index.html#stretch-goals",
+    "title": "GSOC Panda3D: Project Proposal: Native Video Loading",
+    "section": "\nStretch goals\n",
+    "text": "Stretch goals\n\n\nThese are the goals that are more ambitious, that I might work on, but do not constitute as the primary goals for the project as presented by this proposal.\n\n\n\nImplement libtheora as a third option for video loading\n\n\nAdd threading support to the aforementioned libtheora\n\n\nProvide documentation for the implemented libtheora library"
+  },
+  {
+    "objectID": "archives/gsoc-panda3d/index.html#project-implementation-plan",
+    "href": "archives/gsoc-panda3d/index.html#project-implementation-plan",
+    "title": "GSOC Panda3D: Project Proposal: Native Video Loading",
+    "section": "\nProject Implementation Plan\n",
+    "text": "Project Implementation Plan\n\n\n\nGet more familiar with libvpx the literature on the subject and the codebase before the project officially starts.\n\n\nImplement stubs for the classes required to implement libvpx to make it return blank output.\n\n\nGet libvpx to be able to decode the initial frame of a test file\n\n\nGet libvpx to decode the frames with a test file properly.\n\n\nGet libvpx to start working with multiple .webm videos\n\n\nTest and implement error handling features\n\n\nInterface libvpx with existing audio libraries such as libopus and libvorbis\n\n\nAdd seeking functionality\n\n\nAdd in documentation for the integrated libvpx\n\n\nWork on adding threading support11"
+  },
+  {
+    "objectID": "archives/gsoc-panda3d/index.html#project-timeline",
+    "href": "archives/gsoc-panda3d/index.html#project-timeline",
+    "title": "GSOC Panda3D: Project Proposal: Native Video Loading",
+    "section": "\nProject Timeline\n",
+    "text": "Project Timeline\n\n\n\n\nPrior to June 1\n\n\n\n\nReading up documentation for libvpx and learn more about video compression and codecs.\n\n\n\n\nGain more familiarity with Panda3D’s codebase\n\n\n\n\nWrite more tests for the existing Panda3D codebase\n\n\n\n\nRelieve off any GSoC independent time commitments\n\n\n\n\nStart working on Video Loader Implementation\n\n\n\n\n\n\nJune 1 - June 10\n\n\n\nImplement a method stub for WebM loader, and lay groundwork for future work.\n\n\n\n\n\nJune 10 - June 24\n\n\n\n\nIntegrate library for loading Matroska files (possibly using libwebm)\n\n\n\n\nIntegrate libvpx for video decoding\n\n\n\n\nGet the implementation to be able to decode the first frame of an example video.\n\n\n\n\n\n\nJune 24 - July 1\n\n\n\nGet libvpx to decode rest of the frames of the example video.\n\n\n\n\n\nJuly 1 - 3\n\n\n\n\nMaking sure the crafted implementation works as expected.\n\n\n\n\nDeal with any errors that might arise, for example, corrupted files, changed extension names etc.\n\n\n\n\nTurn in Phase 1 evaluation\n\n\n\n\n\n\nJuly 3 - July 6\n\n\n\nRead up literature on threading and to formulate a way to implement threading into the newly integrated libvpx\n\n\n\n\n\nJuly 6 - July 21\n\n\n\nImplement threading support for libvpx in Panda3D as is done in the ffmpeg implementation.\n\n\n\n\n\nJuly 21 - August 3\n\n\n\nTurn in Phase 2 Evaluations\n\n\n\n\n\nAugust 6 - August 10\n\n\n\n\nReview over the code base and write unit tests and integration tests in order to ensure everything is working as expected\n\n\n\n\nStart writing documentation and cleaning up.\n\n\n\n\n\n\nAugust 10 - August 24\n\n\n\nBuffer time for writing tests, and adding features that are not in the scope of this proposal."
+  },
+  {
+    "objectID": "archives/gsoc-panda3d/index.html#existing-contributions-to-panda3d",
+    "href": "archives/gsoc-panda3d/index.html#existing-contributions-to-panda3d",
+    "title": "GSOC Panda3D: Project Proposal: Native Video Loading",
+    "section": "\nExisting Contributions to Panda3D\n",
+    "text": "Existing Contributions to Panda3D\n\n\n\n\nPR #663 [MERGED]: Added unit tests for audio and video functionality of Panda3D. Added tests for Added test for audio_length, audio_rate, audio seek, audio seek fast, audio channels and many more. More information about this PR can be found in PR #612\n\n\n\n\nPR #595 [MERGED]: Update Header File Names to fit Panda3D’s naming convention.\n\n\n\n\nPR #592 [MERGED]: Similar to PR #595\n\n\n\n\nPR #596 [MERGED]: Tested OpenAL’s functionality on MacOS, and whether it actually needed FMOD by testing audio using the Media Sampler Program\n\n\n\n\nPR #623: Expanding on the work done by @hitesh4 in PR #593 . Added a new test for testing setting modes for Clock Objects\n\n\n\n\nPR #624: To remove deprecated methods, once a depreciation policy is decided upon."
+  },
+  {
+    "objectID": "archives/gsoc-panda3d/index.html#benefits-to-the-community",
+    "href": "archives/gsoc-panda3d/index.html#benefits-to-the-community",
+    "title": "GSOC Panda3D: Project Proposal: Native Video Loading",
+    "section": "\nBenefits to the community\n",
+    "text": "Benefits to the community\n\n\nThis project will allow users to switch out their native video loader from FFmpeg to WebM’s libvpx if they choose. This helps the users to not be limited to only FFmpeg to satisfy their video needs and helps them get some of the freedom they experience when choosing an video loader for Panda3D. FFMpeg’s large codebase provides a lot of functionality that the user doesn’t often need for their games, and this causes a large overhead, which is something integration of libvpx aims to reduce."
+  },
+  {
+    "objectID": "archives/gsoc-panda3d/index.html#time-constraints",
+    "href": "archives/gsoc-panda3d/index.html#time-constraints",
+    "title": "GSOC Panda3D: Project Proposal: Native Video Loading",
+    "section": "\nTime Constraints\n",
+    "text": "Time Constraints\n\n\nI plan to spend up to 40 hours a week working on this project. I might have to travel a bit in the early, or late stages of the project, but due to COVID-19 pandemic, it’d be hard to tell the exact dates on when this might occur. Aside from that I have no other commitments planned that might occupy my time."
+  },
+  {
+    "objectID": "archives/gsoc-panda3d/index.html#about-me",
+    "href": "archives/gsoc-panda3d/index.html#about-me",
+    "title": "GSOC Panda3D: Project Proposal: Native Video Loading",
+    "section": "\nAbout me\n",
+    "text": "About me\n\n\nI’m a sophomore (junior by credit hours) studying Computer Science at Texas Tech University. I used to go by Dr.Euler on Github, but I go by FReeshabh now. I still go by Dr.Euler (or oiler) on Discord, and can be contacted there, or by email rishabhtewari1@gmail.com.\n\n\nI mostly run my systems on Arch Linux these days, although I have access to MacOS, and Windows machine if the need arises. I’d either be available in the CDT Timezone, or the IST timezone, but due to the pandemic, I’m unable to say which one currently."
+  },
+  {
+    "objectID": "archives/experience-wth-standup-comedy-as-a-noobie/index.html",
+    "href": "archives/experience-wth-standup-comedy-as-a-noobie/index.html",
+    "title": "My experience with standup comedy after 4-5 months",
+    "section": "",
+    "text": "I find it quite funny, that after finally setting on a blog style, specifically made for Machine Learning and Data Science style. I choose to write the first blog on here on Standup Comedy instead and my experience with it so far.\n\n\n\nI’ve loved standup comedy for quite some time, comedians like Dave Chappelle, George Carlin, Louis C.K. were some of my initial favorites in American Standup Comedy, and obviously there’s many, many more.., but I’m not going to list them, cause what’s the point?\nMy first try at standup comedy was my second semester of freshmen year of College, which was an Open Mic Night within the University. I went twice, bombed horribly, no timing, somewhat plagiarized jokes (on the advice of my roommate). And basically it was bad, but I didn’t feel like it was a bad experience, since going up on the stage, in some ways or the other, gives me a confidence boost. And then I didn’t do it anything until the next academic year.\nThe push for actually doing standup comedy instead of just fantasizing about doing it came from a TV show and a movie, being Marvelous Mrs. Maisel, and the Big Sick (I don’t know why this pushed me to do comedy, but it did). Also with the massive boredom I was facing in my life. Then I found out about a local scene happening from the local subreddit and started going to them. First Mic was a bomb, but the second one went alright.\n\n\n\n\nYou’ll never be for everyone\n\n\nAnd that’s okay! Your goal is to make people laugh, not make all the people laugh. Some people won’t appreciate your jokes, some will find them offensive and tasteless. What’s funny is different for everybody! Some time it’s the audience, some time, it’s just you who sucks, know which ones which.\n\n\nDon’t insult people! (Or the venue you’re at, or the other comedians)\n\n\nLight Batter, and some passing jokes are fine, but picking someone in the audience and just roasting(read insulting) them cause they’re fat or just look peculiar (this advice doesn’t neccessarily apply to clothes and stuff), when they’ve been nothing but nice to you, just cause you think it will get you a few laughs. Don’t do that! Please.\n\n\nStick around for a little bit after the show\n\n\nI think Standup comedy, can just be a great social experience. You get to meet people all from very different backgrounds as you, with the common love for Comedy, or at least seeing people laugh which I think is a great thing. See if there’s anyone doing a podcast, or anything new with their lives. This becomes a family away from family quite fast!\n\n\nIt’s a science of ONE\n\n\nListen to advice and criticism of your comedy, but don’t necessarily take it to heart (especially if you’re have an aversion to criticism). Every comic there has a different method of doing comedy, emulating their behavior and patterns is not going to get you the same place where it led them. Find your own science and process of doing things. This video by Exurb1a is a good watch."
+  },
+  {
+    "objectID": "archives/experience-wth-standup-comedy-as-a-noobie/index.html#getting-into-standup-comedy",
+    "href": "archives/experience-wth-standup-comedy-as-a-noobie/index.html#getting-into-standup-comedy",
+    "title": "My experience with standup comedy after 4-5 months",
+    "section": "",
+    "text": "I’ve loved standup comedy for quite some time, comedians like Dave Chappelle, George Carlin, Louis C.K. were some of my initial favorites in American Standup Comedy, and obviously there’s many, many more.., but I’m not going to list them, cause what’s the point?\nMy first try at standup comedy was my second semester of freshmen year of College, which was an Open Mic Night within the University. I went twice, bombed horribly, no timing, somewhat plagiarized jokes (on the advice of my roommate). And basically it was bad, but I didn’t feel like it was a bad experience, since going up on the stage, in some ways or the other, gives me a confidence boost. And then I didn’t do it anything until the next academic year.\nThe push for actually doing standup comedy instead of just fantasizing about doing it came from a TV show and a movie, being Marvelous Mrs. Maisel, and the Big Sick (I don’t know why this pushed me to do comedy, but it did). Also with the massive boredom I was facing in my life. Then I found out about a local scene happening from the local subreddit and started going to them. First Mic was a bomb, but the second one went alright."
+  },
+  {
+    "objectID": "archives/experience-wth-standup-comedy-as-a-noobie/index.html#what-i-learned",
+    "href": "archives/experience-wth-standup-comedy-as-a-noobie/index.html#what-i-learned",
+    "title": "My experience with standup comedy after 4-5 months",
+    "section": "",
+    "text": "You’ll never be for everyone\n\n\nAnd that’s okay! Your goal is to make people laugh, not make all the people laugh. Some people won’t appreciate your jokes, some will find them offensive and tasteless. What’s funny is different for everybody! Some time it’s the audience, some time, it’s just you who sucks, know which ones which.\n\n\nDon’t insult people! (Or the venue you’re at, or the other comedians)\n\n\nLight Batter, and some passing jokes are fine, but picking someone in the audience and just roasting(read insulting) them cause they’re fat or just look peculiar (this advice doesn’t neccessarily apply to clothes and stuff), when they’ve been nothing but nice to you, just cause you think it will get you a few laughs. Don’t do that! Please.\n\n\nStick around for a little bit after the show\n\n\nI think Standup comedy, can just be a great social experience. You get to meet people all from very different backgrounds as you, with the common love for Comedy, or at least seeing people laugh which I think is a great thing. See if there’s anyone doing a podcast, or anything new with their lives. This becomes a family away from family quite fast!\n\n\nIt’s a science of ONE\n\n\nListen to advice and criticism of your comedy, but don’t necessarily take it to heart (especially if you’re have an aversion to criticism). Every comic there has a different method of doing comedy, emulating their behavior and patterns is not going to get you the same place where it led them. Find your own science and process of doing things. This video by Exurb1a is a good watch."
   },
   {
     "objectID": "about.html",

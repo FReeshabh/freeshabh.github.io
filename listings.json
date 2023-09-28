@@ -8,7 +8,13 @@
   {
     "listing": "/archives.html",
     "items": [
-      "/posts/post-with-code/index.html"
+      "/archives/Surreal-and-shitty-vr-verse/index.html",
+      "/archives/experience-wth-standup-comedy-as-a-noobie/index.html",
+      "/archives/illusion-and-reality/index.html",
+      "/archives/gsoc-panda-2/index.html",
+      "/archives/illusion-linux/index.html",
+      "/archives/gsoc-panda3d/index.html",
+      "/archives/panda-3d-notes/index.html"
     ]
   }
 ]

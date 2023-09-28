@@ -2,22 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://FReeshabh.github.io/freeshabh.github.io/blog.html</loc>
-    <lastmod>2023-09-28T20:40:00.761Z</lastmod>
+    <lastmod>2023-09-28T21:16:10.321Z</lastmod>
   </url>
   <url>
     <loc>https://FReeshabh.github.io/freeshabh.github.io/index.html</loc>
-    <lastmod>2023-09-28T20:40:00.313Z</lastmod>
+    <lastmod>2023-09-28T21:16:09.886Z</lastmod>
   </url>
   <url>
-    <loc>https://FReeshabh.github.io/freeshabh.github.io/posts/post-with-code/index.html</loc>
-    <lastmod>2023-09-28T20:39:59.826Z</lastmod>
+    <loc>https://FReeshabh.github.io/freeshabh.github.io/archives/panda-3d-notes/index.html</loc>
+    <lastmod>2023-09-28T21:16:09.359Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FReeshabh.github.io/freeshabh.github.io/archives/illusion-and-reality/index.html</loc>
+    <lastmod>2023-09-28T21:16:08.204Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FReeshabh.github.io/freeshabh.github.io/archives/illusion-linux/index.html</loc>
+    <lastmod>2023-09-28T21:16:07.697Z</lastmod>
   </url>
   <url>
     <loc>https://FReeshabh.github.io/freeshabh.github.io/archives.html</loc>
-    <lastmod>2023-09-28T20:40:00.073Z</lastmod>
+    <lastmod>2023-09-28T21:16:06.388Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FReeshabh.github.io/freeshabh.github.io/posts/post-with-code/index.html</loc>
+    <lastmod>2023-09-28T21:16:05.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FReeshabh.github.io/freeshabh.github.io/archives/gsoc-panda-2/index.html</loc>
+    <lastmod>2023-09-28T21:16:07.385Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FReeshabh.github.io/freeshabh.github.io/archives/Surreal-and-shitty-vr-verse/index.html</loc>
+    <lastmod>2023-09-28T21:16:07.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FReeshabh.github.io/freeshabh.github.io/archives/gsoc-panda3d/index.html</loc>
+    <lastmod>2023-09-28T21:16:09.119Z</lastmod>
+  </url>
+  <url>
+    <loc>https://FReeshabh.github.io/freeshabh.github.io/archives/experience-wth-standup-comedy-as-a-noobie/index.html</loc>
+    <lastmod>2023-09-28T21:16:09.655Z</lastmod>
   </url>
   <url>
     <loc>https://FReeshabh.github.io/freeshabh.github.io/about.html</loc>
-    <lastmod>2023-09-28T20:40:00.517Z</lastmod>
+    <lastmod>2023-09-28T21:16:10.088Z</lastmod>
   </url>
 </urlset>
