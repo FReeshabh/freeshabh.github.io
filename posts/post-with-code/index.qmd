@@ -1,6 +1,0 @@
----
-title: "Post With Code"
-date: "2023-09-28"
----
-
-Test post
