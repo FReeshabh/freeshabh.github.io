@@ -1,0 +1,14 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/post-with-code/index.html"
+    ]
+  },
+  {
+    "listing": "/archives.html",
+    "items": [
+      "/posts/post-with-code/index.html"
+    ]
+  }
+]
