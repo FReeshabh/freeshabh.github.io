@@ -1,7 +1,7 @@
 ---
 title: "Archives"
 listing:
-  contents: posts
+  contents: archives
   sort: "date desc"
   type: default
   categories: false
@@ -9,4 +9,6 @@ listing:
   filter-ui: false
 page-layout: full
 title-block-banner: true
+description: Stuff I did in the past, that isn't very good OR just old and not maintained . But keeping it here for the sake of history. This is not every project/writing piece from the past. Just the ones that were lucky enough to have a web presence.
+
 ---

@@ -6,7 +6,9 @@ website:
   title: "Rishabh Tewari"
   navbar:
     right:
-      - about.qmd
+      # - about.qmd
+      - archives.qmd
+      - blog.qmd
       - icon: github
         href: https://github.com/FReeshabh
       - icon: linkedin
