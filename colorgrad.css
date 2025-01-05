@@ -18,6 +18,7 @@
 	background-size: 600vw 600vw;
 	background-origin: padding-box;
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-animation: 60s linear 0s infinite normal forwards running followThrough;
 	-moz-animation: 60s linear 0s infinite normal forwards running followThrough;
 	animation: 60s linear 0s infinite normal forwards running followThrough;
