@@ -18,6 +18,18 @@
 			<img class="profile-img" src="./imgs/profile.jpeg" alt="Rishabh Tewari" />
 			<h1 class="colorgrad">Rishabh Tewari</h1>
 			<p>Software Engineer • Member of Technical Staff • Machine Learning</p>
+			<div class="social-links">
+				<a href="https://github.com/freeshabh">
+					<img src="./imgs/github.png" alt="GitHub" />
+				</a>
+				<a href="https://www.linkedin.com/in/rishabhtewari">
+					<img src="./imgs/linkedin.png" alt="LinkedIn" />
+				</a>
+				<a href="https://twitter.com/">
+					<img src="./imgs/birdapp.png" alt="Twitter" />
+				</a>
+				<button id="theme-toggle" class="theme-button">🎨 Change Theme</button>
+			</div>
 
 			<!-- Quick Links Section -->
 			<div class="links">
@@ -28,4 +40,37 @@
 			</div>
 		</div>
 	</body>
+		<!-- Footer Section -->
+		<footer class="footer">
+			<p>&copy; <span id="year"></span> Made with ❤️ by Rishabh Tewari</p>
+		</footer>
+
+		<!-- Script to update the year dynamically -->
+		<script>
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+		<script>
+			const themes = [
+				"linear-gradient(135deg, #f5f7fa, #c3cfe2)", // Light blue-gray
+				"linear-gradient(135deg, #ff9a9e, #fad0c4)", // Pastel pink
+				"linear-gradient(135deg, #a1c4fd, #c2e9fb)", // Subtle blue
+				"linear-gradient(135deg, #667eea, #764ba2)", // Professional purple
+				"linear-gradient(135deg, #ffecd2, #fcb69f)", // Warm peach
+				"linear-gradient(135deg, #e0c3fc, #8ec5fc)" // Calm lavender
+			];
+		
+			const themeButton = document.getElementById("theme-toggle");
+			themeButton.addEventListener("click", () => {
+				const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+				document.body.style.background = randomTheme;
+				document.body.style.transition = "background 0.5s ease";
+			});
+			setInterval(() => {
+	const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+	document.body.style.background = randomTheme;
+	document.body.style.transition = "background 0.5s ease";
+}, 10000); // Change every 10 seconds
+		</script>
+		
+
 </html>

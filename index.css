@@ -95,7 +95,28 @@ p {
 		background-position: 100% 50%;
 	}
 }
+/* Social links row styling */
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
 
+/* Social icons styling */
+.social-links a img {
+	width: 40px;  /* Fixed size for consistency */
+	height: 40px; /* Fixed size for consistency */
+	object-fit: contain; /* Ensure the image fits within the box */
+	border-radius: 50%; /* Optional circular icons */
+	border: 2px solid white; /* Optional border for aesthetics */
+	transition: transform 0.2s ease-in-out;
+}
+
+.social-links a img:hover {
+	transform: scale(1.1); /* Subtle zoom effect */
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Glow effect on hover */
+}
 .colorgrad {
 	background: linear-gradient(270deg, #ff6347, #f9f077, #ff6347);
 	background-size: 400% 400%; /* Increased for a smoother flow */
@@ -103,4 +124,38 @@ p {
 	-webkit-text-fill-color: transparent;
 	font-weight: bold;
 	animation: gradient-flow 5s ease infinite; /* Applying the animation */
+}
+
+.footer {
+	text-align: center;
+	padding: 10px 0;
+	font-size: 14px;
+	color: #ddd;
+	background-color: rgba(0, 0, 0, 0.0); /* Slight transparent background */
+	position: fixed; /* Makes it always stick to the bottom */
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.footer p {
+	margin: 0;
+}
+
+.theme-button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 8px;
+	background-color: #fff;
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.theme-button:hover {
+	background-color: #333;
+	color: #fff;
 }
