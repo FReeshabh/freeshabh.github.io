@@ -4,14 +4,17 @@ body {
 }
 
 h1 {
-	font-size: 72px;
+	/* font-size: 72px; */
+	font-size: clamp(48px, 6vw, 72px); /* 48px min, 72px max */
 	margin-bottom: 0;
-	margin-top: 45%;
+	/* margin-top: 45%; */
+	margin-top: 15vh;
 }
 
 h2 {
 	margin-top: 0%;
 	display: inline;
+	font-size: clamp(20px, 3vw, 28px);
 }
 
 img,
@@ -25,6 +28,10 @@ p {
 a {
 	color: black;
 	text-decoration-line: none;
+}
+a:hover {
+	color: #ff6347;
+	text-decoration: underline;
 }
 
 ::selection {
@@ -64,6 +71,7 @@ a {
 }
 
 .resume {
-	margin-top: 45%;
-	margin-left: 20px;
+	/* margin-top: 45%;
+	margin-left: 20px; */
+	margin-top: 15vh;
 }
