@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog - Rishabh Tewari">
+    <title>Blog - Rishabh Tewari</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-content">
+            <a href="/" class="nav-logo">RT</a>
+            <div class="nav-links" id="nav-links">
+                <a href="/#now" class="nav-link">Now</a>
+                <a href="/#career" class="nav-link">Career</a>
+                <a href="/blog/" class="nav-link" style="color: var(--color-primary);">Blog</a>
+                <a href="/#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-icon">☀️</span>
+                </button>
+            </div>
+            <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Blog Header -->
+        <header class="blog-header">
+            <a href="/" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back home
+            </a>
+            <h1 class="section-title">Blog</h1>
+            <p class="section-subtitle">Thoughts on software engineering, ML, and life</p>
+        </header>
+
+        <!-- Blog List -->
+        <section class="blog-list">
+            <div class="blog-grid" id="blog-list">
+                <!-- Posts loaded via JavaScript -->
+                <div class="card blog-card">
+                    <div class="blog-card-date">Coming soon</div>
+                    <h3>First blog post on the way!</h3>
+                    <p>Stay tuned for thoughts on software engineering, ML, and life in San Diego.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p>Made with <span class="footer-heart">❤️</span> in San Diego</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/freeshabh" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/rishabhtewari" target="_blank" rel="noopener"
+                    class="footer-link">LinkedIn</a>
+                <a href="/" class="footer-link">Home</a>
+                <a href="/archives/" class="footer-link">Archives</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Load blog posts
+        (async function () {
+            const container = document.getElementById('blog-list');
+
+            try {
+                const response = await fetch('/blog/posts.json');
+                if (!response.ok) return;
+
+                const posts = await response.json();
+                if (posts.length === 0) return;
+
+                container.innerHTML = posts.map(post => `
+          <a href="/blog/post.html?slug=${post.slug}" class="card blog-card">
+            <div class="blog-card-date">${new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+            <h3>${post.title}</h3>
+            <p>${post.description}</p>
+          </a>
+        `).join('');
+
+            } catch (e) {
+                console.log('No blog posts found yet');
+            }
+        })();
+    </script>
+</body>
+
+</html>

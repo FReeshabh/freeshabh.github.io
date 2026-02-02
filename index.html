@@ -4,116 +4,433 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rishabh Tewari</title>
-  <meta name="description" content="Rishabh Tewari - Engineer, Creator, Explorer. Based in San Diego.">
-  <meta name="keywords" content="Rishabh Tewari, software engineer, content creator, AI, tech, security">
+  <meta name="description"
+    content="Rishabh Tewari - Software Engineer at Intuit, MS CS from UT Austin. Based in San Diego, CA.">
+  <meta name="keywords" content="Rishabh Tewari, Software Engineer, Intuit, Oracle, Machine Learning, UT Austin">
   <meta name="author" content="Rishabh Tewari">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Rishabh Tewari">
-  <meta property="og:description" content="Engineer. Creator. Explorer.">
+  <meta property="og:title" content="Rishabh Tewari - Software Engineer">
+  <meta property="og:description" content="Software Engineer at Intuit | MS CS @ UT Austin | San Diego, CA">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freeshabh.github.io">
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Rishabh Tewari - Software Engineer</title>
 
-  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-  <!-- Skip Link for Accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-
   <!-- Navigation -->
-  <nav aria-label="Main navigation">
-    <div class="nav-container">
-      <a href="/" class="nav-logo" aria-label="Home">RT</a>
-
-      <!-- Mobile Menu Button -->
-      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
-        <span class="hamburger"></span>
+  <nav class="nav" id="nav">
+    <div class="container nav-content">
+      <a href="/" class="nav-logo">RT</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#now" class="nav-link">Now</a>
+        <a href="#career" class="nav-link">Career</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-toggle-icon">☀️</span>
+        </button>
+      </div>
+      <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-
-      <ul class="nav-links" role="list">
-        <li><a href="/" class="active">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="#content">Content</a></li>
-        <li><a href="#connect">Connect</a></li>
-      </ul>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <main id="main-content">
-    <!-- Hero Section -->
-    <section id="hero" aria-labelledby="hero-name">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-image">
-            <div class="profile-pic" id="profile-pic-container" role="img" aria-label="Photo of Rishabh Tewari">
-              <img src="assets/images/profile.jpg" alt="Rishabh Tewari">
-            </div>
+  <!-- Hero Section -->
+  <section class="hero section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-greeting">Hey there! 👋</span>
+        <h1 class="hero-name">I'm <span class="text-gradient">Rishabh Tewari</span></h1>
+        <p class="hero-title">Software Engineer @ Intuit</p>
+        <p class="hero-title" style="margin-top: -0.5rem;">MS Computer Science @ UT Austin</p>
+        <div class="hero-location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>San Diego, California</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#career" class="btn btn-secondary">View My Work</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-image-wrapper">
+          <img src="assets/images/profile.jpg" alt="Rishabh Tewari" class="profile-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="quick-links section" id="links">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Quick Links</h2>
+        <p class="section-subtitle">Connect with me around the web</p>
+      </div>
+
+      <div class="links-grid">
+        <!-- Featured Patent -->
+        <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2024191689" target="_blank" rel="noopener"
+          class="link-card featured-link animate-on-scroll">
+          <div class="link-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
           </div>
-          <div class="hero-text">
-            <h1 id="hero-name">Rishabh Tewari</h1>
-            <p class="hero-tagline" id="hero-tagline">Engineer. Creator. Explorer.</p>
+          <div class="link-card-content">
+            <h4>🎉 Patent Published</h4>
+            <p>Systems and Methods for Detection and Correction of Anomalous Network System Behavior</p>
+          </div>
+        </a>
 
-            <ul class="interest-list" id="interest-list" aria-label="About me">
-              <!-- Interests loaded via JS -->
-            </ul>
+        <a href="https://github.com/freeshabh" target="_blank" rel="noopener" class="link-card animate-on-scroll">
+          <div class="link-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </div>
+          <div class="link-card-content">
+            <h4>GitHub</h4>
+            <p>@freeshabh</p>
+          </div>
+        </a>
 
-            <p class="hero-bio" id="hero-bio">
-              <!-- Bio loaded via JS -->
-            </p>
+        <a href="https://www.linkedin.com/in/rishabhtewari" target="_blank" rel="noopener"
+          class="link-card animate-on-scroll">
+          <div class="link-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" />
+            </svg>
+          </div>
+          <div class="link-card-content">
+            <h4>LinkedIn</h4>
+            <p>rishabhtewari</p>
+          </div>
+        </a>
 
-            <div class="cta-buttons">
-              <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
-              <a href="#content" class="btn">My Content</a>
-            </div>
+        <a href="mailto:tewaririshabh1@gmail.com" class="link-card animate-on-scroll">
+          <div class="link-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="link-card-content">
+            <h4>Email</h4>
+            <p>tewaririshabh1@gmail.com</p>
+          </div>
+        </a>
+
+        <a href="https://docs.google.com/document/d/1C6xOI5N9V46XKb3zBGZE5pDFGvXLrzEDg0sv2wwIrk4/edit?usp=sharing"
+          target="_blank" rel="noopener" class="link-card animate-on-scroll">
+          <div class="link-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <div class="link-card-content">
+            <h4>Resume</h4>
+            <p>View my resume</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Now Section -->
+  <section class="now-section section" id="now">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">What I'm Up To <span style="font-size: 0.7em;">(/now)</span></h2>
+        <p class="section-subtitle">A glimpse into my current focus</p>
+      </div>
+
+      <div class="now-content animate-on-scroll">
+        <ul class="now-list">
+          <li class="now-item">
+            <span class="now-emoji">💼</span>
+            <span class="now-text">Working on the <strong>Adversary Management Platform</strong> at Intuit, protecting
+              customers from fraud and security threats.</span>
+          </li>
+          <li class="now-item">
+            <span class="now-emoji">🏖️</span>
+            <span class="now-text">Enjoying life in <strong>San Diego</strong> — exploring the beaches, hiking trails,
+              and the local food scene.</span>
+          </li>
+          <li class="now-item">
+            <span class="now-emoji">📚</span>
+            <span class="now-text">Diving deeper into <strong>ML/AI systems</strong> and how they can be applied to
+              real-world security problems.</span>
+          </li>
+          <li class="now-item">
+            <span class="now-emoji">🎯</span>
+            <span class="now-text">Always looking for interesting <strong>side projects</strong> and opportunities to
+              learn something new.</span>
+          </li>
+        </ul>
+        <p class="now-updated">Last updated: February 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="featured-section section" id="featured">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Featured</h2>
+        <p class="section-subtitle">Highlights and projects I'm proud of</p>
+      </div>
+
+      <div class="featured-grid">
+        <!-- Patent Card -->
+        <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2024191689" target="_blank" rel="noopener"
+          class="card featured-card animate-on-scroll" style="text-decoration: none; color: inherit;">
+          <span class="featured-card-tag">Patent</span>
+          <h3>Anomaly Detection in Networks</h3>
+          <p>Published patent on using graph-based convolutional neural networks to detect and correct anomalous network
+            system behavior. Developed during my internship at Viasat.</p>
+          <span style="color: var(--color-primary); font-weight: 500;">Read more →</span>
+        </a>
+
+        <!-- Placeholder for future projects -->
+        <div class="featured-placeholder animate-on-scroll">
+          <div class="featured-placeholder-icon">🚀</div>
+          <h3>More coming soon...</h3>
+          <p>I'm working on some cool projects. Check back later!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Section -->
+  <section class="career-section section" id="career">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Career Journey</h2>
+        <p class="section-subtitle">My professional experience and education</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Intuit -->
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">Feb 2025 - Present</div>
+          <h3 class="timeline-title">Software Engineer II</h3>
+          <div class="timeline-company">Intuit · San Diego, CA</div>
+          <p class="timeline-description">
+            Working on the Adversary Management Platform Experience team, building systems to protect customers from
+            fraud and security threats.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">BigQuery</span>
+            <span class="skill-tag">Security</span>
+          </div>
+        </div>
+
+        <!-- Oracle MTS -->
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">Aug 2024 - Nov 2024</div>
+          <h3 class="timeline-title">Member of Technical Staff</h3>
+          <div class="timeline-company">Oracle Cloud Infrastructure · Austin, TX</div>
+          <p class="timeline-description">
+            Speech AI team building Automated Speech Recognition, Realtime Speech, Customization, Diarization, and
+            Dictation capabilities for Oracle Cloud.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Speech AI</span>
+            <span class="skill-tag">OCI</span>
+          </div>
+        </div>
+
+        <!-- Oracle SWE -->
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">Jul 2022 - Aug 2024</div>
+          <h3 class="timeline-title">Software Engineer</h3>
+          <div class="timeline-company">Oracle Cloud Infrastructure · Austin, TX</div>
+          <p class="timeline-description">
+            Built and maintained the OCI AI Speech Service, enabling customers to transcribe audio to text with high
+            accuracy.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Shell Scripting</span>
+            <span class="skill-tag">ML Ops</span>
+          </div>
+        </div>
+
+        <!-- Viasat -->
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">May 2021 - Aug 2021</div>
+          <h3 class="timeline-title">Software Engineer Intern - AI Ops</h3>
+          <div class="timeline-company">Viasat Inc. · Carlsbad, CA</div>
+          <p class="timeline-description">
+            Developed ML architectures for network anomaly detection. <strong>Patent published</strong> on graph-based
+            CNN for detecting anomalous network behavior. Achieved 92% accuracy (up from 71%).
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Graph Neural Networks</span>
+            <span class="skill-tag">D3.js</span>
+          </div>
+        </div>
+
+        <!-- CodePath -->
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">Jun 2021 - Jul 2022</div>
+          <h3 class="timeline-title">iOS Tech Fellow (Instructor)</h3>
+          <div class="timeline-company">CodePath.org</div>
+          <p class="timeline-description">
+            Expanded CodePath's iOS Development Course to Texas Tech University. Mentored students and developed iOS
+            applications with Swift and Xcode.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">Swift</span>
+            <span class="skill-tag">iOS Development</span>
+            <span class="skill-tag">Teaching</span>
+          </div>
+        </div>
+
+        <!-- UT Austin -->
+        <div class="timeline-item education animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">2024</div>
+          <h3 class="timeline-title">Master of Science, Computer Science</h3>
+          <div class="timeline-company">The University of Texas at Austin</div>
+          <p class="timeline-description">
+            Coursework: Natural Language Processing, Deep Learning, Reinforcement Learning, Advanced Operating Systems.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Reinforcement Learning</span>
+          </div>
+        </div>
+
+        <!-- Texas Tech -->
+        <div class="timeline-item education animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-date">2018 - 2022</div>
+          <h3 class="timeline-title">Bachelor of Science, Computer Science</h3>
+          <div class="timeline-company">Texas Tech University</div>
+          <p class="timeline-description">
+            Research-focused CS education with a minor in Mathematics. Cool courses: Machine Learning (Graduate),
+            Virtual Reality, Parallel Programming, Computer Networks.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Mathematics</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Content Section -->
-    <section id="content" aria-labelledby="content-heading">
-      <div class="container">
-        <h2 id="content-heading">Content</h2>
-        <p class="section-intro">Sharing thoughts on tech, life, and the journey.</p>
+  <!-- Content / Blog Section -->
+  <section class="content-section section" id="content">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2 class="section-title">Latest Posts</h2>
+        <p class="section-subtitle">Thoughts, tutorials, and things I've learned</p>
+      </div>
 
-        <!-- Featured Content -->
-        <div class="featured-content" id="featured-content">
-          <!-- Loaded via JS -->
+      <div class="blog-grid" id="blog-preview">
+        <!-- Blog posts will be loaded here via JavaScript -->
+        <div class="card blog-card animate-on-scroll">
+          <div class="blog-card-date">Coming soon</div>
+          <h3>First blog post on the way!</h3>
+          <p>Stay tuned for thoughts on software engineering, ML, and life in San Diego.</p>
         </div>
+      </div>
 
-        <!-- Upcoming Platforms -->
-        <div class="upcoming-content" id="upcoming-content">
-          <p class="upcoming-label">More coming soon</p>
-          <div class="upcoming-platforms" id="upcoming-platforms">
-            <!-- Loaded via JS -->
+      <a href="/blog/" class="view-all-link animate-on-scroll">
+        View all posts
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="contact-content animate-on-scroll">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>I'm always open to interesting conversations, collaboration opportunities, or just saying hi!</p>
+
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
           </div>
-        </div>
-      </div>
-    </section>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="What's on your mind?"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
 
-    <!-- Connect Section -->
-    <section id="connect" aria-labelledby="connect-heading">
-      <div class="container">
-        <h2 id="connect-heading">Connect</h2>
-        <div class="links-grid" id="links-container">
-          <!-- Links loaded via JS -->
+        <div class="contact-alt">
+          <p>Or just email me directly:</p>
+          <a href="mailto:tewaririshabh1@gmail.com" class="contact-email">tewaririshabh1@gmail.com</a>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer role="contentinfo">
-    <p>© <span id="current-year"></span> Rishabh Tewari</p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>Made with <span class="footer-heart">❤️</span> in San Diego</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/freeshabh" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/rishabhtewari" target="_blank" rel="noopener"
+          class="footer-link">LinkedIn</a>
+        <a href="/blog/" class="footer-link">Blog</a>
+        <a href="/archives/" class="footer-link">Archives</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- JavaScript -->
   <script src="js/main.js"></script>
 </body>
 

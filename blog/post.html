@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Post - Rishabh Tewari">
+    <title>Blog - Rishabh Tewari</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Marked.js for markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container nav-content">
+            <a href="/" class="nav-logo">RT</a>
+            <div class="nav-links" id="nav-links">
+                <a href="/#now" class="nav-link">Now</a>
+                <a href="/#career" class="nav-link">Career</a>
+                <a href="/blog/" class="nav-link" style="color: var(--color-primary);">Blog</a>
+                <a href="/#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-icon">☀️</span>
+                </button>
+            </div>
+            <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <article class="blog-post-page" id="post-container">
+            <a href="/blog/" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                All posts
+            </a>
+
+            <header class="blog-post-header">
+                <h1 class="blog-post-title" id="post-title">Loading...</h1>
+                <p class="blog-post-meta" id="post-meta"></p>
+            </header>
+
+            <div class="blog-post-content" id="post-content">
+                <!-- Markdown content rendered here -->
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p>Made with <span class="footer-heart">❤️</span> in San Diego</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/freeshabh" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/rishabhtewari" target="_blank" rel="noopener"
+                    class="footer-link">LinkedIn</a>
+                <a href="/" class="footer-link">Home</a>
+                <a href="/archives/" class="footer-link">Archives</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Parse frontmatter from markdown
+        function parseFrontmatter(content) {
+            const frontmatterRegex = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/;
+            const match = content.match(frontmatterRegex);
+
+            if (!match) {
+                return { frontmatter: {}, content: content };
+            }
+
+            const frontmatterStr = match[1];
+            const markdown = match[2];
+
+            // Simple YAML parser for our frontmatter
+            const frontmatter = {};
+            frontmatterStr.split('\n').forEach(line => {
+                const colonIndex = line.indexOf(':');
+                if (colonIndex > -1) {
+                    const key = line.slice(0, colonIndex).trim();
+                    let value = line.slice(colonIndex + 1).trim();
+                    // Remove quotes
+                    if ((value.startsWith('"') && value.endsWith('"')) ||
+                        (value.startsWith("'") && value.endsWith("'"))) {
+                        value = value.slice(1, -1);
+                    }
+                    frontmatter[key] = value;
+                }
+            });
+
+            return { frontmatter, content: markdown };
+        }
+
+        // Load and render the post
+        async function loadPost() {
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('slug');
+
+            if (!slug) {
+                document.getElementById('post-title').textContent = 'Post not found';
+                document.getElementById('post-content').innerHTML = '<p>Please select a post from the <a href="/blog/">blog listing</a>.</p>';
+                return;
+            }
+
+            try {
+                const response = await fetch(`/blog/posts/${slug}.md`);
+                if (!response.ok) throw new Error('Post not found');
+
+                const rawContent = await response.text();
+                const { frontmatter, content } = parseFrontmatter(rawContent);
+
+                // Update page
+                document.getElementById('post-title').textContent = frontmatter.title || slug;
+                document.title = `${frontmatter.title || slug} - Rishabh Tewari`;
+
+                if (frontmatter.date) {
+                    const date = new Date(frontmatter.date);
+                    document.getElementById('post-meta').textContent = date.toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    });
+                }
+
+                // Render markdown
+                document.getElementById('post-content').innerHTML = marked.parse(content);
+
+            } catch (e) {
+                document.getElementById('post-title').textContent = 'Post not found';
+                document.getElementById('post-content').innerHTML = `
+          <p>Sorry, this post couldn't be found.</p>
+          <p><a href="/blog/">← Back to all posts</a></p>
+        `;
+            }
+        }
+
+        loadPost();
+    </script>
+</body>
+
+</html>
