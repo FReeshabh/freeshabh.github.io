@@ -11,7 +11,7 @@ title: " "
 # title-block-banner: true
 --- -->
 
-<!-- I'm Rishab -->
+<!-- I'm Rishabh -->
 
 
 ---
@@ -42,14 +42,3 @@ I'm a Software Engineer at Oracle (Oracle Cloud Infrastructure - OCI) working on
 
 
 This introduction isn't all comprehensive or my <b>resume</b>, which you can ask me for if interested. Email me at [tewaririshabh1@gmail.com](mailto:tewaririshabh1@gmail.com)
-
-
-##### Things I've been up to that aren't work 
-* 
-  + tpot (ifykyk)
-  <!-- : The tpot community in Austin has it's own unique flavor to the more technical (e/acc, founder, etc.) oriented communities of San Fransisco and leans typically non technical in my experience. -->
-  + Boxing / Muay Thai
-   <!-- - I'm a beginner in both, and have only been doing it for a couple of months. Getting punched in the face absolutely sucks, but I believe it was neccessary for me. -->
-  + Cooking (I'm a good cook, believe me) & Eating
-  + irl Standup comedy (mostly watching these days)
-  + Thinking 

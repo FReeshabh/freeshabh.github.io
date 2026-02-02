@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rishabh Tewari</title>
+    <meta name="description"
+        content="Rishabh Tewari's professional portfolio - Software Engineer at Intuit, former Oracle, UT Austin">
+    <meta name="author" content="Rishabh Tewari">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="/" class="nav-logo" aria-label="Home">RT</a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav-links" role="list">
+                <li><a href="/">Home</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="/#content">Content</a></li>
+                <li><a href="/#connect">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Portfolio Header -->
+        <section id="portfolio-header" class="portfolio-header">
+            <div class="container">
+                <h1>Portfolio</h1>
+                <p class="section-intro">My professional journey in tech.</p>
+                <a href="#" id="resume-link" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    📄 Download Resume
+                </a>
+            </div>
+        </section>
+
+        <!-- Patent Highlight -->
+        <section id="patent" class="patent-section">
+            <div class="container">
+                <div class="patent-card card" id="patent-card">
+                    <!-- Patent loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" aria-labelledby="experience-heading">
+            <div class="container">
+                <h2 id="experience-heading">Experience</h2>
+                <div class="timeline" id="experience-container">
+                    <!-- Experience loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" aria-labelledby="education-heading">
+            <div class="container">
+                <h2 id="education-heading">Education</h2>
+                <div class="education-grid" id="education-container">
+                    <!-- Education loaded via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>© <span id="current-year"></span> Rishabh Tewari</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>
