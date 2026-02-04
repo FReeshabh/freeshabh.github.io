@@ -1,30 +1,30 @@
 ---
-title: "Hello World!"
+title: "Hello, Earthlings"
 date: "2026-02-01"
-description: "Welcome to my blog! Here's what you can expect."
+description: "A short welcome, a small confession, and a promise to stay curious."
 ---
 
-# Hello World! 👋
+# Hello, Earthlings. 👋
 
-Welcome to my corner of the internet! I'm Rishabh, a software engineer based in San Diego.
+This is my blog. It is a small signal flare from San Diego, meant to say: I am here, and I am still curious.
 
-## What to expect
+## What you'll find here
 
-I'll be writing about:
+I write about the things that keep me up, or at least keep me awake:
 
-- **Software Engineering** – Lessons learned building systems at scale
-- **Machine Learning** – Practical applications and interesting research
-- **Career** – Navigating tech, interviewing, and growth
-- **Life in San Diego** – Because sometimes you need a break from code
+- **Software engineering** — building systems, fixing the leaky ones
+- **Machine learning** — useful spells, and the occasional misfire
+- **Career** — the awkward parts of growing in public
+- **Life in San Diego** — sunshine, salt air, and the occasional taco
 
-## Why blog?
+## Why bother?
 
-I've always found that writing helps me think more clearly. Plus, if something I learned the hard way can help someone else, that's a win.
+Writing is the cheapest form of time travel. It lets future‑me remember, and maybe helps someone else avoid the same potholes. So it goes.
 
-## Let's connect
+## Say hello
 
-If you want to chat about anything I write, feel free to [reach out](/index.html#contact)!
+If anything here makes you nod, laugh, or squint, [reach out](/index.html#contact). I like good conversations.
 
 ---
 
-*More posts coming soon...*
+*More posts coming soon, with fewer exclamation points.*

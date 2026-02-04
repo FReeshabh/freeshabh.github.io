@@ -104,6 +104,56 @@
             return { frontmatter, content: markdown };
         }
 
+        function renderMarkdown(content) {
+            if (window.marked && typeof window.marked.parse === 'function') {
+                return window.marked.parse(content);
+            }
+
+            const escapeHtml = (text) => text
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+
+            const parseInline = (text) => {
+                const escaped = escapeHtml(text);
+                const withLinks = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, label, url) => {
+                    const safeUrl = url.trim();
+                    if (!/^(https?:|mailto:|\/|#)/i.test(safeUrl)) {
+                        return label;
+                    }
+                    const normalizedUrl = safeUrl.replace(/"/g, '&quot;');
+                    return `<a href="${normalizedUrl}">${label}</a>`;
+                });
+                return withLinks
+                    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\*(.+?)\*/g, '<em>$1</em>');
+            };
+
+            return content.trim().split(/\n{2,}/).map(block => {
+                const trimmed = block.trim();
+                if (trimmed === '---' || trimmed === '***') {
+                    return '<hr>';
+                }
+                if (trimmed.startsWith('### ')) {
+                    return `<h3>${parseInline(trimmed.slice(4))}</h3>`;
+                }
+                if (trimmed.startsWith('## ')) {
+                    return `<h2>${parseInline(trimmed.slice(3))}</h2>`;
+                }
+                if (trimmed.startsWith('# ')) {
+                    return `<h1>${parseInline(trimmed.slice(2))}</h1>`;
+                }
+                if (trimmed.startsWith('- ')) {
+                    const items = trimmed.split('\n')
+                        .filter(line => line.trim().startsWith('- '))
+                        .map(line => `<li>${parseInline(line.trim().slice(2))}</li>`)
+                        .join('');
+                    return `<ul>${items}</ul>`;
+                }
+                return `<p>${parseInline(trimmed).replace(/\n/g, '<br>')}</p>`;
+            }).join('');
+        }
+
         // Load and render the post
         async function loadPost() {
             const params = new URLSearchParams(window.location.search);
@@ -136,7 +186,7 @@
                 }
 
                 // Render markdown
-                document.getElementById('post-content').innerHTML = marked.parse(content);
+                document.getElementById('post-content').innerHTML = renderMarkdown(content);
 
             } catch (e) {
                 document.getElementById('post-title').textContent = 'Post not found';
